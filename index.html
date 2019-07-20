@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validação de Formulários</title>
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <form action="https://qualquer.coisa" method="POST" enctype="multipart/form-data"> 
+    <div>
+      <label for="email">Digite seu email</label>
+      <input name="login" type="email">
+    </div>
+    <div>
+        <label for="confirm">Confirme seu email</label>
+        <input name="confirm" type="email">
+      </div>
+    <div>
+      <label for="senha">Crie sua senha:</label>
+      <input type="password" name="senha">
+    </div>
+    <div>
+      <label for="cpf">Informe seu CPF</label>
+      <input type="text" name="cpf" maxlength="14">
+    </div>
+    <div>
+      <label for="plano">Escolha seu plano:</label>
+      <input type="radio" value="b" name="plano"><label>Básico</label>
+      <input type="radio" value="i" name="plano"><label>Intermediário</label>
+      <input type="radio" value="v" name="plano"><label>VIP</label>
+      <div class="ERRO"></div>
+    </div>
+    <div>
+      <label for="foto">Escolha uma foto</label>
+      <input type="file" name="foto" accept="image/*">
+    </div>
+    <div>
+      <button type="submit">ENVIAR</button>
+      <button type="reset">LIMPAR</button>
+    </div>
+  </form>
+</body>
+</html>
